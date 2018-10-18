@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="microprofile:war exploded">
-    <output-path>$PROJECT_DIR$/target/microprofile</output-path>
+  <artifact type="exploded-war" name="microprofile_kneidinger:war exploded">
+    <output-path>$PROJECT_DIR$/target/demo</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="microprofile" />
+          <element id="module-output" name="microprofile_kneidinger" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71" />
@@ -15,9 +15,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/microprofile/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/demo/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="microprofile/web/Web" />
+      <element id="javaee-facet-resources" facet="microprofile_kneidinger/web/Web" />
     </root>
   </artifact>
 </component>

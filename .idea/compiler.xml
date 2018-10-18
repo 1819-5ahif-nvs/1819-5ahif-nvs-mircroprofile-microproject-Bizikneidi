@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microprofile" />
+        <module name="microprofile_kneidinger" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="microprofile" target="1.8" />
+      <module name="microprofile_kneidinger" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

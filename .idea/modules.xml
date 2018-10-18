@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/microprofile.iml" filepath="$PROJECT_DIR$/microprofile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microprofile_kneidinger.iml" filepath="$PROJECT_DIR$/microprofile_kneidinger.iml" />
     </modules>
   </component>
 </project>
