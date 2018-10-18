@@ -19,15 +19,15 @@ class PersonRepository: Repository<Person> {
     }
 
     override fun getAll(): List<Person> {
-        return entityManager!!.createNamedQuery("Person.getAll", Person::class.java).resultList;
+        return entityManager!!.createNamedQuery("Person.getAll", Person::class.java).resultList
     }
 
     override fun getById(id: Long): Person {
         return entityManager!!.find(Person::class.java, id)
     }
 
-    override fun delete(item: Person) {
-        entityManager!!.remove(item)
+    override fun delete(id: Long) {
+        entityManager!!.remove(id)
     }
 
 }

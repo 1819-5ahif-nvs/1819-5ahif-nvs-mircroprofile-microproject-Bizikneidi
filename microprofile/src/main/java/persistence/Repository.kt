@@ -5,5 +5,5 @@ interface Repository<T> {
     fun update(item: T)
     fun getAll(): List<T>
     fun getById(id: Long): T
-    fun delete(item: T)
+    fun delete(id: Long)
 }
