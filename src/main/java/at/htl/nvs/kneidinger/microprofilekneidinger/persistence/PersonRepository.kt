@@ -6,7 +6,7 @@ import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
 
 @Stateless
-class PersonRepository: Repository<Person> {
+open class PersonRepository: Repository<Person> {
     @PersistenceContext
     private var entityManager: EntityManager? = null
 

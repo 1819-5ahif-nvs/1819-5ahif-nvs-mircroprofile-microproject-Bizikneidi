@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>at.htl.nvs.kneidinger</groupId>
   <artifactId>microprofile_kneidinger</artifactId>
-  <name>Thorntail Example</name>
+  <name>Microprofile</name>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
@@ -30,7 +30,7 @@
   </dependencyManagement>
 
   <build>
-    <finalName>demo</finalName>
+    <finalName>microprofile</finalName>
     <plugins>
       <plugin>
         <groupId>io.thorntail</groupId>
@@ -99,6 +99,13 @@
       <version>7.0</version>
       <scope>provided</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>10.14.2.0</version>
+    </dependency>
+
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib-jdk8</artifactId>
