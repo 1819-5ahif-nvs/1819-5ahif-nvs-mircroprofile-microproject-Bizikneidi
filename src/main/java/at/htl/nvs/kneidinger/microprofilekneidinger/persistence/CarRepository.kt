@@ -2,13 +2,16 @@ package at.htl.nvs.kneidinger.microprofilekneidinger.persistence
 
 import at.htl.nvs.kneidinger.microprofilekneidinger.entity.Car
 import javax.ejb.Stateless
+import javax.enterprise.context.ApplicationScoped
 import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
+import javax.transaction.Transactional
 
-@Stateless
+@ApplicationScoped
+@Transactional
 open class CarRepository: Repository<Car> {
     @PersistenceContext
-    open lateinit var entityManager: EntityManager
+    private lateinit var entityManager: EntityManager
 
     override fun create(item: Car): Car {
         entityManager.persist(item)

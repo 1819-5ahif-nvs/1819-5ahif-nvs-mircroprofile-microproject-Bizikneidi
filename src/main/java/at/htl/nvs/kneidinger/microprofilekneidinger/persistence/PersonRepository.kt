@@ -2,10 +2,13 @@ package at.htl.nvs.kneidinger.microprofilekneidinger.persistence
 
 import at.htl.nvs.kneidinger.microprofilekneidinger.entity.Person
 import javax.ejb.Stateless
+import javax.enterprise.context.ApplicationScoped
 import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
+import javax.transaction.Transactional
 
-@Stateless
+@ApplicationScoped
+@Transactional
 open class PersonRepository: Repository<Person> {
     @PersistenceContext
     private lateinit var entityManager: EntityManager
