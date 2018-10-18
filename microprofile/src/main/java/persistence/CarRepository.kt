@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext
 @Stateless
 class CarRepository: Repository<Car> {
     @PersistenceContext
-    var entityManager: EntityManager? = null
+    private var entityManager: EntityManager? = null
 
     override fun create(item: Car): Car {
         entityManager!!.persist(item)
