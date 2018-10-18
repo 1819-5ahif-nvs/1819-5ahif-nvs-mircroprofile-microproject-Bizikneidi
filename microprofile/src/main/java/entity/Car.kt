@@ -1,11 +1,9 @@
-package endpoints
+package entity
 
-import javax.persistence.CascadeType
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.OneToMany
+import javax.persistence.*
 
 @Entity
+@NamedQuery(name = "Car.getAll", query = "SELECT c FROM Car c")
 data class Car (
         var id: Long? = null,
         var brand: String? = null,
