@@ -104,7 +104,6 @@
       <artifactId>derby-maven-plugin</artifactId>
       <version>1.10</version>
     </dependency>
-
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib-jdk8</artifactId>

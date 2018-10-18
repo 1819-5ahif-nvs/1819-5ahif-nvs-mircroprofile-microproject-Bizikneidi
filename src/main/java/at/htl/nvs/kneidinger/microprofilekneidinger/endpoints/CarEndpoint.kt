@@ -2,6 +2,7 @@ package at.htl.nvs.kneidinger.microprofilekneidinger.endpoints
 
 import at.htl.nvs.kneidinger.microprofilekneidinger.entity.Car
 import at.htl.nvs.kneidinger.microprofilekneidinger.persistence.CarRepository
+import javax.ejb.EJB
 import javax.faces.bean.RequestScoped
 import javax.inject.Inject
 import javax.ws.rs.*
@@ -11,7 +12,7 @@ import javax.ws.rs.core.Response
 @Path("/cars")
 @RequestScoped
 class CarEndpoint {
-    @Inject
+    @EJB
     private var repository: CarRepository? = null
 
     @GET

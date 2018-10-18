@@ -2,6 +2,7 @@ package at.htl.nvs.kneidinger.microprofilekneidinger.endpoints
 
 import at.htl.nvs.kneidinger.microprofilekneidinger.entity.Person
 import at.htl.nvs.kneidinger.microprofilekneidinger.persistence.PersonRepository
+import javax.ejb.EJB
 import javax.faces.bean.RequestScoped
 import javax.inject.Inject
 import javax.ws.rs.*
@@ -11,7 +12,7 @@ import javax.ws.rs.core.Response
 @Path("/people")
 @RequestScoped
 class PersonEndpoint {
-    @Inject
+    @EJB
     private var repository: PersonRepository? = null
 
     @GET
