@@ -99,11 +99,10 @@
       <version>7.0</version>
       <scope>provided</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.derby/derby -->
     <dependency>
-      <groupId>org.apache.derby</groupId>
-      <artifactId>derby</artifactId>
-      <version>10.14.2.0</version>
+      <groupId>org.carlspring.maven</groupId>
+      <artifactId>derby-maven-plugin</artifactId>
+      <version>1.10</version>
     </dependency>
 
     <dependency>
