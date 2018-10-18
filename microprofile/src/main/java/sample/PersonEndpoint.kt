@@ -7,7 +7,7 @@ import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
 
-@Path("/cars")
+@Path("/people")
 class PersonEndpoint {
     @Inject
     private var repository: PersonRepository? = null
