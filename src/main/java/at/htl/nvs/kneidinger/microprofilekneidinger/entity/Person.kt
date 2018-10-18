@@ -8,7 +8,6 @@ import javax.persistence.*
 data class Person (
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long,
-        @NotNull
-        var name: String
+        var id: Long? = null,
+        var name: String? = null
 )
