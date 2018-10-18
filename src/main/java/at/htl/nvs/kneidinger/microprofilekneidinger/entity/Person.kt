@@ -1,11 +1,14 @@
 package at.htl.nvs.kneidinger.microprofilekneidinger.entity
 
-import javax.persistence.Entity
-import javax.persistence.NamedQuery
+import org.jetbrains.annotations.NotNull
+import javax.persistence.*
 
 @Entity
 @NamedQuery(name = "Person.getAll", query = "SELECT p FROM Person p")
 data class Person (
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Long,
+        @NotNull
         var name: String
 )
