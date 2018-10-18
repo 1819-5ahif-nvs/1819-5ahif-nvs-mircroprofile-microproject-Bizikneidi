@@ -10,8 +10,9 @@ class CarRepository: Repository<Car> {
     @PersistenceContext
     var entityManager: EntityManager? = null
 
-    override fun create(item: Car) {
+    override fun create(item: Car): Car {
         entityManager!!.persist(item)
+        return item
     }
 
     override fun update(item: Car) {
