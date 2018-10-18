@@ -1,4 +1,4 @@
-package at.htl.nvs.kneidinger.microprofilekneidinger.rest;
+package at.htl.nvs.kneidinger.microprofilekneidinger;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
