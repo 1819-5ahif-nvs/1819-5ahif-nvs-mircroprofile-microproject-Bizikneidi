@@ -7,21 +7,21 @@ import javax.annotation.PostConstruct
 import javax.ejb.EJB
 import javax.ejb.Singleton
 import javax.ejb.Startup
+import javax.inject.Inject
 
 @Startup
 @Singleton
 open class InitBean {
     @EJB
-    private var carRepository: CarRepository? = null
-
+    open lateinit var carRepository: CarRepository
 
     @PostConstruct
     fun init() {
-        carRepository?.create(Car(brand = "Audi", type = "A6", owners = listOf(
+        carRepository.create(Car(brand = "Audi", type = "A6", owners = listOf(
                 Person(name = "Bürgi"),
                 Person(name = "Bizi")
         )))
-        carRepository?.create(Car(brand = "Audi", type = "RS8", owners = listOf(
+        carRepository.create(Car(brand = "Audi", type = "RS8", owners = listOf(
                 Person(name = "Bizi")
         )))
     }

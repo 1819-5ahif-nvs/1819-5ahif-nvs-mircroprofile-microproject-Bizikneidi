@@ -8,27 +8,27 @@ import javax.persistence.PersistenceContext
 @Stateless
 open class PersonRepository: Repository<Person> {
     @PersistenceContext
-    private var entityManager: EntityManager? = null
+    private lateinit var entityManager: EntityManager
 
     override fun create(item: Person): Person {
-        entityManager!!.persist(item)
+        entityManager.persist(item)
         return item
     }
 
     override fun update(item: Person) {
-        entityManager!!.merge(item)
+        entityManager.merge(item)
     }
 
     override fun getAll(): List<Person> {
-        return entityManager!!.createNamedQuery("Person.getAll", Person::class.java).resultList
+        return entityManager.createNamedQuery("Person.getAll", Person::class.java).resultList
     }
 
     override fun getById(id: Long): Person {
-        return entityManager!!.find(Person::class.java, id)
+        return entityManager.find(Person::class.java, id)
     }
 
     override fun delete(id: Long) {
-        entityManager!!.remove(id)
+        entityManager.remove(id)
     }
 
 }
