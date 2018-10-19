@@ -98,9 +98,9 @@
             <artifactId>jpa-eclipselink</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.thorntail</groupId>
-            <artifactId>cdi</artifactId>
-        </dependency>
+        <groupId>io.thorntail</groupId>
+        <artifactId>cdi</artifactId>
+    </dependency>
         <dependency>
             <groupId>io.thorntail</groupId>
             <artifactId>ejb</artifactId>

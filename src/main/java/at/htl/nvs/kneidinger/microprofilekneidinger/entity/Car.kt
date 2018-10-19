@@ -11,5 +11,7 @@ data class Car (
         var id: Long? = null,
         var brand: String? = null,
         var type: String? = null,
+        @JoinColumn(name = "OWNER")
+        @ManyToOne
         var owner: Person? = null
 )
